@@ -21,7 +21,7 @@ The source of each dataset is listed below.
 | Divvy Bikes   | sources x destinations x time (minutes)         | 673 x 673 x 525594     | 3.82M       | [Link](https://www.divvybikes.com/system-data) |
 | Chicago Crime | communities x crime types x time (hours)        | 77 x 32 x 148464       | 5.33M       | [Link](http://frostt.io/) |
 | New York Taxi | sources x destinations x time (seconds)         | 265 x 265 x 5184000    | 84.39M      | [Link](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page) |
-| Ride Austin   | sources x destinations x colors x time (minutes)| 219 x 219 x 24 X 285136| 0.89M       | [Link](https://data.world/andytryba/rideaustin) |
+| Ride Austin   | sources x destinations x colors x time (minutes)| 219 x 219 x 24 x 285136| 0.89M       | [Link](https://data.world/andytryba/rideaustin) |
 
 ## Requirements
 
