@@ -2,10 +2,10 @@
 
 Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams](), Taehyung Kwon*, Inkyu Park*, Dongjin Lee, and Kijung Shin, ICDE 2021.
 
-SliceNStitch is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition, which has numerous time-critical applications.
-* Any time: updating factor matrices immediately without having to wait until the current time period ends
-* Fast: with constant-time updates up to 759x faster than online methods
-* Accurate: Accurate: with fitness comparable (specifically, 72 - 160%) to offline methods.
+**SliceNStitch** is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition, which has numerous time-critical applications.
+* *Any time*: updating factor matrices immediately without having to wait until the current time period ends
+* *Fast*: with constant-time updates up to 759x faster than online methods
+* *Accurate*: Accurate: with fitness comparable (specifically, 72 - 160%) to offline methods.
 
 ## Input Format and Datasets
 
