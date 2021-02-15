@@ -7,7 +7,7 @@ SliceNStitch is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition,
 * Fast: with constant-time updates up to 759x faster than online methods
 * Accurate: Accurate: with fitness comparable (specifically, 72 - 160%) to offline methods.
 
-## Input format and datasets
+## Input format and Datasets
 
 An input should be a CSV file formatted as follows.
 - First (N-1) columns should represent the coordinate of input
