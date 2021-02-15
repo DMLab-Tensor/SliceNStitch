@@ -1,6 +1,26 @@
 # SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams
 
-Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams]()
+Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams](), Taehyung Kwon*, Inkyu Park*, Dongjin Lee, and Kijung Shin, ICDE 2021.
+
+SliceNStitch is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition, which has numerous time-critical applications.
+* Any time: updating factor matrices immediately without having to wait until the current time period ends
+* Fast: with constant-time updates up to 759x faster than online methods
+* Accurate: Accurate: with fitness comparable (specifically, 72 - 160%) to offline methods.
+
+## Input format and datasets
+
+An input should be a CSV file formatted as follows.
+- First (N-1) columns should represent the coordinate of input
+- Last column should represent the value of input
+
+All parsed datasets are available at this [link](https://www.dropbox.com/sh/lha0oevqos6jxn9/AAAz3Xkql2aKwcnKmX3kt357a?dl=0).
+The source of each dataset is listed below.
+| Name          | Structure                                       | Size                   | # Non-zeros | Source   |
+| ------------- |:-----------------------------------------------:| :---------------------:| :----------:| :-------:|
+| Divvy Bikes   | sources x destinations x time (minutes)         | 673 x 673 x 525594     | 3.82M       | [Link](https://www.divvybikes.com/system-data) |
+| Chicago Crime | communities x crime types x time (hours)        | 77 x 32 x 148464       | 5.33M       | [Link](http://frostt.io/) |
+| New York Taxi | sources x destinations x time (seconds)         | 265 x 265 x 5184000    | 84.39M      | [Link](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page) |
+| Ride Austin   | sources x destinations x colors x time (minutes)| 219 x 219 x 24 X 285136| 0.89M       | [Link](https://data.world/andytryba/rideaustin) |
 
 ## Requirements
 
@@ -111,12 +131,3 @@ algorithm:
         numSample: 20  # Threshold (θ)
         clipping: 1000.0  # Clipping value (η)
 ```
-
-## Data Stream File
-
-It should be CSV format file.
-
-- First (N-1) columns should represent the coordinate of input
-- Last column should represent the value of input
-
-Since the test data stream files are very large, please download the files via [Dropbox Link]().
