@@ -1,0 +1,8 @@
+# Text editor
+.vs/
+.vscode/
+
+# Build
+out/
+build/
+cmake-build/
