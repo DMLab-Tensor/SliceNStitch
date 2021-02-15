@@ -1,6 +1,6 @@
 # SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams
 
-Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams](), Taehyung Kwon*, Inkyu Park*, Dongjin Lee, and Kijung Shin, ICDE 2021.
+Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams]() by Taehyung Kwon*, Inkyu Park*, [Dongjin Lee](https://github.com/wooner49), and [Kijung Shin](https://kijungs.github.io/), to be presented at [ICDE 2021](https://icde2021.gr/).
 
 **SliceNStitch** is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition, which has numerous time-critical applications.
 It has the following properties:
