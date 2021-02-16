@@ -149,7 +149,7 @@ The output (test:outputPath) of the code will be:
 -----Test Results-----
 RMSE	Fitness
 0.33438	0.675436
-0.329659	0.639608
+0.329659 0.639608
 ...
 0.37203	0.692263
 
