@@ -11,7 +11,7 @@ It has the following properties:
 
 ## Input Format and Datasets
 
-An input must be a CSV file which consists of a multi-apsect data stream.
+Input must be a CSV file that consists of a multi-aspect data stream.
 Each row of the file is a single event and the file should be formatted as follows. 
 * First (N-2) columns represent the non temporal indices of events
 * The (N-1)th column represents the time indices of events
