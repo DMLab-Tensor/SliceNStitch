@@ -9,6 +9,10 @@ It has the following properties:
 * *Fast*: with constant-time updates up to 759x faster than online methods
 * *Accurate*: with fitness comparable (specifically, 72 - 160%) to offline methods.
 
+## Supplementary Document
+
+Please see [supplementary](./doc/supplementary.pdf).
+
 ## Input Format and Datasets
 
 Input must be a CSV file that consists of a multi-aspect data stream.
@@ -137,4 +141,11 @@ algorithm:
     settings:
         numSample: 20  # Threshold (θ)
         clipping: 1000.0  # Clipping value (η)
+```
+
+## Reference
+
+If you use this code as part of any research, please cite the following paper.
+
+```text
 ```
