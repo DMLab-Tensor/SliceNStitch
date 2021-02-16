@@ -11,10 +11,11 @@ It has the following properties:
 
 ## Input Format and Datasets
 
-An input should be a CSV file formatted as follows.
-
-* First (N-1) columns should represent the coordinate of input
-* Last column should represent the value of input
+An input must be a CSV file which consists of a multi-apsect data stream.
+Each row of the file is a single event and the file should be formatted as follows. 
+* First (N-2) columns represent the non temporal indices of events
+* The (N-1)th column represents the time indices of events
+* The last column represents the values of events
 
 All parsed datasets are available at this [link](https://www.dropbox.com/sh/lha0oevqos6jxn9/AAAz3Xkql2aKwcnKmX3kt357a?dl=0).
 The source of each dataset is listed below.
