@@ -13,17 +13,7 @@ It has the following properties:
 
 Please see [supplementary](./doc/supplementary.pdf).
 
-## Input Format and Datasets
-
-Input must be a CSV file that consists of a multi-aspect data stream.
-Each row of the file is a single event and the file should be formatted as follows.
-
-For a CSV file with N columns,
-
-* First (N-2) columns represent the non-temporal indices of events
-* The (N-1)th column represents the time indices of events
-* The last column represents the values of events
-
+## Datasets
 All parsed datasets are available at this [link](https://www.dropbox.com/sh/lha0oevqos6jxn9/AAAz3Xkql2aKwcnKmX3kt357a?dl=0).
 The source of each dataset is listed below.
 | Name          | Structure                                       | Size                   | # Non-zeros | Source   |
@@ -141,6 +131,36 @@ algorithm:
     settings:
         numSample: 20  # Threshold (θ)
         clipping: 1000.0  # Clipping value (η)
+```
+
+## Input & Output Format
+
+Input (data:filePath in a config file) must be a CSV file that consists of a multi-aspect data stream.
+Each row of the file is a single event and the file should be formatted as follows.
+
+For a CSV file with N columns,
+
+* First (N-2) columns represent the non-temporal indices of events
+* The (N-1)th column represents the time indices of events
+* The last column represents the values of events
+
+The output (test:outputPath) of the code will be:
+```
+-----Test Results-----
+RMSE	Fitness
+0.33438	0.675436
+0.329659	0.639608
+...
+0.37203	0.692263
+
+-----The Total Number of Updates-----
+4030721
+
+-----Total Elapse Time-----
+330.706 (sec)
+
+-----Elapse Time per each Update-----
+8.20463e-05 (sec)
 ```
 
 ## Reference
