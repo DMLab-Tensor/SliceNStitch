@@ -12,8 +12,11 @@ It has the following properties:
 ## Input Format and Datasets
 
 Input must be a CSV file that consists of a multi-aspect data stream.
-Each row of the file is a single event and the file should be formatted as follows. 
-* First (N-2) columns represent the non temporal indices of events
+Each row of the file is a single event and the file should be formatted as follows.
+
+For a CSV file with N columns,
+
+* First (N-2) columns represent the non-temporal indices of events
 * The (N-1)th column represents the time indices of events
 * The last column represents the values of events
 
@@ -69,14 +72,14 @@ To test the algorithms in the paper, run the following command on your terminal:
 ```yaml
 # test.yaml
 data:
-    filePath: "nyt_2019.csv"  # DataStream file
-    nonTempDim: [265, 265]  # non temporal dimension
-    tempDim: 5184000  # Temporal size of data stream
+    filePath: "nyt_2019.csv"  # Path of the data stream file
+    nonTempDim: [265, 265]  # Non-temporal dimension
+    tempDim: 5184000  # Temporal length of data stream
 
 tensor:
     unitNum: 10  # The number of indices in the time mode (W)
     unitSize: 3600  # Period (T)
-    rank: 20  # rank of CPD (R)
+    rank: 20  # Rank of CPD (R)
 
 algorithm:
     name: "SNS_RND+"
