@@ -1,9 +1,10 @@
 # SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams
 
-Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams]() by Taehyung Kwon*, Inkyu Park*, [Dongjin Lee](https://github.com/wooner49), and [Kijung Shin](https://kijungs.github.io/), to be presented at [ICDE 2021](https://icde2021.gr/).
+Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous CP Decomposition of Sparse Tensor Streams]() by [Taehyung Kwon](https://github.com/kbrother)\*, [Inkyu Park](https://github.com/yunik1004)\*, [Dongjin Lee](https://github.com/wooner49), and [Kijung Shin](https://kijungs.github.io/), to be presented at [ICDE 2021](https://icde2021.gr/).
 
 **SliceNStitch** is an algorithm for continous CANDECOMP/PARAFAC (CP) decomposition, which has numerous time-critical applications.
 It has the following properties:
+
 * *Any time*: updates factor matrices immediately without having to wait until the current time period ends
 * *Fast*: with constant-time updates up to 759x faster than online methods
 * *Accurate*: with fitness comparable (specifically, 72 - 160%) to offline methods.
@@ -11,8 +12,9 @@ It has the following properties:
 ## Input Format and Datasets
 
 An input should be a CSV file formatted as follows.
-- First (N-1) columns should represent the coordinate of input
-- Last column should represent the value of input
+
+* First (N-1) columns should represent the coordinate of input
+* Last column should represent the value of input
 
 All parsed datasets are available at this [link](https://www.dropbox.com/sh/lha0oevqos6jxn9/AAAz3Xkql2aKwcnKmX3kt357a?dl=0).
 The source of each dataset is listed below.
@@ -25,14 +27,14 @@ The source of each dataset is listed below.
 
 ## Requirements
 
-- C/C++17 compiler
-- CMake
-- Git
+* C/C++17 compiler
+* CMake
+* Git
 
 ## Used Libraries
 
-- Eigen (<https://gitlab.com/libeigen/eigen>)
-- yaml-cpp (<https://github.com/jbeder/yaml-cpp>)
+* Eigen (<https://gitlab.com/libeigen/eigen>)
+* yaml-cpp (<https://github.com/jbeder/yaml-cpp>)
 
 ## Download
 
@@ -49,7 +51,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=RELEASE
 ```
 
-After that, you can build the source code using the build automation software (e.g, Make, Ninja).
+After that, you can build the program using the build automation software (e.g. Make, Ninja).
 
 ## Execution
 
