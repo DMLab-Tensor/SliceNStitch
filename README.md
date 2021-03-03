@@ -6,8 +6,8 @@ Source code for SliceNStitch, described in the paper [SliceNStitch: Continuous C
 It has the following properties:
 
 * *Any time*: updates factor matrices immediately without having to wait until the current time period ends
-* *Fast*: with constant-time updates up to 759x faster than online methods
-* *Accurate*: with fitness comparable (specifically, 72 - 160%) to offline methods.
+* *Fast*: with constant-time updates up to 464x faster than online methods
+* *Accurate*: with fitness comparable (specifically, 72 - 100%) to offline methods.
 
 ## Supplementary Document
 
