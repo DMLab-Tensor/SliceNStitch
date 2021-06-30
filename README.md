@@ -167,5 +167,13 @@ RMSE	Fitness
 
 If you use this code as part of any research, please cite the following paper.
 
-```text
+```
+@inproceedings{kwon2021slicenstitch,
+  title={Slicenstitch: Continuous cp decomposition of sparse tensor streams},
+  author={Kwon, Taehyung and Park, Inkyu and Lee, Dongjin and Shin, Kijung},
+  booktitle={2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+  pages={816--827},
+  year={2021},
+  organization={IEEE}
+}
 ```
